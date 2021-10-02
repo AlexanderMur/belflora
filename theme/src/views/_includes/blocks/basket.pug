@@ -1,0 +1,36 @@
+.basket
+  .basket__bg.-js-fadeoutbasket
+  form.basket__wrap
+    .basket__top
+      .basket__header
+        h2 Ваша корзина
+        button.basket__close.-js-fadeoutbasket
+          +svgsprite('close')
+      .basket__body 
+        +basket-cart('./assets/img/carts/6.png', 'Букет из кустовой хризантемы и кустовой розы')
+        //- +basket-cart('./assets/img/carts/12.png', 'Корзина с цветами')
+        //- +basket-cart('./assets/img/carts/12.png', 'Корзина с цветами')
+        //- +basket-cart('./assets/img/carts/12.png', 'Корзина с цветами')
+    .basket__bottom   
+      .basket__set 
+        p Добавить набор для продления жизни сразенных цветов?
+        .basket__radios
+          label.basket__radio
+            input.hidden(type="radio" name="set" checked)
+            .basket__radio-button Да
+          label.basket__radio
+            input.hidden(type="radio" name="set")
+            .basket__radio-button Нет
+      .basket__bottom-wrap
+        .basket__price.price 
+          .price-wrap
+            .prce__item 
+              h5 Стоимость 
+              .price__number.summ  7 212 руб.
+          .price-wrap
+            .prce__item 
+              h5 Cкидка 
+              .price__number.summ  0 руб.
+        .basket__buttons 
+          a.basket__button.button.--dark.--big(href="#") Оформить заказ
+          button.basket__button.basket__button--close.button.--white.--big.-js-fadeoutbasket Продолжить покупки

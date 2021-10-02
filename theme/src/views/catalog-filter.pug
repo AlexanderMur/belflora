@@ -1,0 +1,52 @@
+extends _includes/layout
+
+block config
+  - var pagetitle = 'Каталог'
+  - var bodyClass = ''
+block content
+  +main-banner-filter('Каталог Online витрина')
+  section.catalog-filter
+    .container 
+      .catalog-filter__wrap
+        .catalog-filter__nav
+          .catalog-filter__sticky
+            p.catalog-filter__title Сортировать по: 
+            ul.catalog-filter__list
+              li.catalog-filter__link
+                a(href="#") Все букеты
+              li.catalog-filter__link.active
+                a(href="#") Online витрина
+              li.catalog-filter__link
+                a(href="#") Коллекция SIMPLE
+              li.catalog-filter__link
+                a(href="#") Пионы
+              li.catalog-filter__link
+                a(href="#") Огромные букеты
+              li.catalog-filter__link
+                a(href="#") Монобукеты
+              li.catalog-filter__link
+                a(href="#") Коробки с цветами
+              li.catalog-filter__link
+                a(href="#") Композиции
+        .catalog-filter__carts
+          .carts__wrap.carts-list.carts-list-3
+            +cart('2 358 руб.', 'Букет из 7 нежно розовых пионов', 'новинка', 'супер цена', './assets/img/carts/1.png')
+            +cart('3 400 руб.', 'Букет «Мечта»', 'новинка', 'супер цена', './assets/img/carts/2.png')
+            +cart('3 450 руб.', 'Букет с цветами «Желание»', 'новинка', 'супер цена', './assets/img/carts/3.png')
+            +cart('3 750 руб.', 'Корзина с сезонными цветами', 'новинка', 'супер цена', './assets/img/carts/4.png')
+            +cart('6 870 руб.', 'Букет «Признание»', 'новинка', 'супер цена', './assets/img/carts/5.png')
+            +cart('3 200 руб.', 'Корзина с сезонными цветами', 'новинка', 'супер цена', './assets/img/carts/6.png')
+            +cart('1 950 руб.', 'Букет «Вдохновение»', 'новинка', 'супер цена', './assets/img/carts/7.png')
+            +cart('3 200 руб.', 'Букет «Радуга»', 'новинка', 'супер цена', './assets/img/carts/8.png')
+            +cart('3 750 руб.', 'Букет «Грация»', 'новинка', 'супер цена', './assets/img/carts/9.png')
+            +cart('2 450 руб.', 'Букет «Оттенки нежности»', 'новинка', 'супер цена', './assets/img/carts/10.png')
+            +cart('4 200 руб.', 'Коробка с цветами «Танго»', 'новинка', 'супер цена', './assets/img/carts/11.png')
+            +cart('2 450 руб.', 'Коробки с цветами «Восторг»', 'новинка', 'супер цена', './assets/img/carts/12.png')
+            +page-banner('Не нашел, что искал? Собери на свой вкус')
+            +cart('1 950 руб.', 'Букет «Вдохновение»', 'новинка', 'супер цена', './assets/img/carts/7.png')
+            +cart('3 200 руб.', 'Букет «Радуга»', 'новинка', 'супер цена', './assets/img/carts/8.png')
+            +cart('3 750 руб.', 'Букет «Грация»', 'новинка', 'супер цена', './assets/img/carts/9.png')
+            +cart('2 450 руб.', 'Букет «Оттенки нежности»', 'новинка', 'супер цена', './assets/img/carts/10.png')
+            +cart('4 200 руб.', 'Коробка с цветами «Танго»', 'новинка', 'супер цена', './assets/img/carts/11.png')
+            +cart('2 450 руб.', 'Коробки с цветами «Восторг»', 'новинка', 'супер цена', './assets/img/carts/12.png')
+  +text-section

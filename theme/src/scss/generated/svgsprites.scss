@@ -1,0 +1,118 @@
+.svgsprite {
+    display:inline-block;
+    fill:currentColor;
+    vertical-align:middle;
+
+    &._arrow-down {
+    	width:20px;
+    	height:20px;
+    }
+    &._arrow-left {
+    	width:20px;
+    	height:20px;
+    }
+    &._arrow-right {
+    	width:20px;
+    	height:20px;
+    }
+    &._bank {
+    	width:60px;
+    	height:60px;
+    }
+    &._basket {
+    	width:35px;
+    	height:35px;
+    }
+    &._burger {
+    	width:30px;
+    	height:30px;
+    }
+    &._calendar {
+    	width:24px;
+    	height:24px;
+    }
+    &._checked {
+    	width:15px;
+    	height:15px;
+    }
+    &._clock {
+    	width:20px;
+    	height:20px;
+    }
+    &._close {
+    	width:35px;
+    	height:35px;
+    }
+    &._close-small {
+    	width:20px;
+    	height:20px;
+    }
+    &._contact-marker {
+    	width:20px;
+    	height:20px;
+    }
+    &._contact-phone {
+    	width:20px;
+    	height:20px;
+    }
+    &._feature {
+    	width:30px;
+    	height:30px;
+    }
+    &._heart {
+    	width:35px;
+    	height:35px;
+    }
+    &._heart-full {
+    	width:26px;
+    	height:24px;
+    }
+    &._inst {
+    	width:35px;
+    	height:35px;
+    }
+    &._marker {
+    	width:35px;
+    	height:35px;
+    }
+    &._minus {
+    	width:20px;
+    	height:20px;
+    }
+    &._mobile-basket {
+    	width:30px;
+    	height:30px;
+    }
+    &._paper {
+    	width:60px;
+    	height:60px;
+    }
+    &._paypall {
+    	width:60px;
+    	height:60px;
+    }
+    &._phone {
+    	width:35px;
+    	height:35px;
+    }
+    &._phone-footer {
+    	width:35px;
+    	height:35px;
+    }
+    &._plus {
+    	width:20px;
+    	height:20px;
+    }
+    &._rub {
+    	width:60px;
+    	height:60px;
+    }
+    &._search {
+    	width:35px;
+    	height:35px;
+    }
+    &._star {
+    	width:22px;
+    	height:22px;
+    }
+}

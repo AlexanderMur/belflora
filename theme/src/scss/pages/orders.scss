@@ -1,0 +1,134 @@
+.orders__list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.orders {
+  width: calc(100% - 600px);
+}
+
+.order__item {
+  border: 1px solid #E0E3EB;
+  border-radius: 6px;
+  padding: 60px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 32px;
+}
+
+.order__left{
+  width: 150px;
+}
+
+.order__right{
+  width: calc(100% - 160px);
+}
+
+.order__date{
+  font-size: 16px;
+  line-height: 22px;
+  color: #B3B7C2;
+  margin-bottom: 18px;
+}
+
+.order__name {
+  font-size: 20px;
+  line-height: 26px;
+  margin-bottom: 18px;
+}
+
+.order__country{
+  font-size: 16px;
+  line-height: 22px;
+  color: #B3B7C2;
+}
+
+.order__stars{
+  margin-bottom: 22px;
+}
+
+.order__text{
+  font-size: 20px;
+  line-height: 28px;
+}
+
+@media(max-width: 1150px){
+  .order__item{
+    padding: 40px;
+  }
+  .orders__list{
+    width: calc();
+  }
+  .orders {
+    width: calc(100% - 511px);
+  }
+  .order__left{
+    width: 110px;
+  }
+  .order__right {
+    width: calc(100% - 130px);
+  }
+  .order__text {
+    font-size: 16px;
+    line-height: 23px;
+  }
+}
+
+
+@media(max-width: 980px){
+  .orders{
+    width: calc(100% - 460px);
+  }
+
+  .order__item{
+    padding: 32px 20px;
+  }
+
+  .order__date{
+    margin-bottom: 12px;
+    font-size: 13px;
+    line-height: 13px;
+  }
+
+  .order__name{
+    font-size: 15px;
+    line-height: 16px;
+    margin-bottom: 12px;
+  }
+
+  .order__country{
+    font-size: 13px;
+    line-height: 13px;
+  }
+
+  .order__left{
+    width: 100px;
+  }
+
+  .order__right{
+    width: calc(100% - 110px);
+  }
+
+  .order__stars{
+    margin-bottom: 10px;
+  }
+
+  .order__text{
+    font-size: 15px;
+    line-height: 20px;
+  }
+
+  .order__item{
+    margin-bottom: 18px;
+  }
+}
+
+
+@media(max-width: 830px){
+  .orders__list{
+   display: block; 
+  }
+  .orders{
+    width: 100%;
+  }
+}

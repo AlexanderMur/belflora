@@ -1,0 +1,22 @@
+extends _includes/layout
+
+block config
+  - var pagetitle = 'Предварительный каталог'
+  - var bodyClass = ''
+block content
+  +main-banner('Каталог коллекций')
+  section.section-catalogs
+    .container
+      .catalog
+        .catalogs__list
+          +catalog('Все букеты', './assets/img/catalog/1.png')
+          +catalog('Пионы', './assets/img/catalog/2.png')
+          +catalog('Авторские букеты', './assets/img/catalog/3.png')
+          +catalog('Монобукеты', './assets/img/catalog/4.png')
+          +catalog('Коробки с цветами', './assets/img/catalog/5.png')
+          +catalog('Огромные букеты', './assets/img/catalog/6.png')
+          +catalog('Ящики с цветами', './assets/img/catalog/7.png')
+          +catalog('Корзины с цветами', './assets/img/catalog/8.png')
+      a.catalog__btn.button.--white(href="catalog.html") Еще коллекции
+  +text-section
+

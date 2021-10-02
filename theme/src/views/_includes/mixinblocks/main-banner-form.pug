@@ -1,0 +1,18 @@
+mixin main-banner-form(title)
+  section.main-banner.--background-2
+    .container
+      +crumbs('Главная страница', 'Каталог коллекций')(class="--white --center crumbs--mainbanner")
+      h1.main-banner__title.--white=title
+      .main-banner__steps.main-banner__steps--desktop
+        .main-banner__step.active
+          .main-banner__step-circle
+          .main-banner__step-text Отправитель
+        .main-banner__step.active
+          .main-banner__step-circle
+          .main-banner__step-text Адрес доставки
+        .main-banner__step
+          .main-banner__step-circle
+          .main-banner__step-text Получатель
+        .main-banner__step
+          .main-banner__step-circle
+          .main-banner__step-text Оплата заказа

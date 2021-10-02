@@ -1,0 +1,64 @@
+extends _includes/layout
+
+block config
+  - var pagetitle = 'О нас говорят'
+  - var bodyClass = ''
+block content
+  section.main-banner.--background-2
+    .container
+      +crumbs('Главная страница', 'Каталог коллекций')(class="--white --center crumbs--mainbanner")
+      h1.main-banner__title.--white Оформление заказа
+      .main-banner__steps.main-banner__steps--desktop
+        .main-banner__step.active
+          .main-banner__step-circle
+          .main-banner__step-text Отправитель
+        .main-banner__step
+          .main-banner__step-circle
+          .main-banner__step-text Адрес доставки
+        .main-banner__step
+          .main-banner__step-circle
+          .main-banner__step-text Получатель
+        .main-banner__step
+          .main-banner__step-circle
+          .main-banner__step-text Оплата заказа
+  section.steps-section 
+    .container
+      h2.step__title Детали заказа
+      .main-banner__steps.main-banner__steps--mobile
+        .main-banner__step.active
+          .main-banner__step-circle
+          .main-banner__step-text Отправитель
+        .main-banner__step
+          .main-banner__step-circle
+          .main-banner__step-text Адрес
+        .main-banner__step
+          .main-banner__step-circle
+          .main-banner__step-text Получатель
+        .main-banner__step
+          .main-banner__step-circle
+          .main-banner__step-text Оплата
+      .steps__list 
+        +form('1. Отправитель')
+          +input('text', 'Ваше имя*', 'Неправильный формат имени')
+          +input('tel', 'Ваш телефон*', 'Неправильный формат телефона')
+          +input('text', 'Ваша почта', 'Неправильный формат почты')
+          .form__buttons 
+            button.button.--dark.--big.form__buttom Далее
+        .steps__basket
+          h4.steps__basket-title Ваш заказ
+          +basket-cart('./assets/img/carts/6.png', 'Букет из кустовой хризантемы и кустовой розы')
+          +basket-cart('./assets/img/carts/6.png', 'Букет из кустовой хризантемы и кустовой розы')
+          .basket__bottom-wrap
+            .basket__price.price 
+              .price-wrap
+                .prce__item 
+                  h5 Стоимость 
+                  .price__number.summ  7 212 руб.
+  section.offers-section 
+    .container
+      h2 Интересные предложения
+      .carts__wrap.carts-list.carts-list-4
+        +cart('2 358 руб.', 'Букет из 7 нежно розовых пионов', 'новинка', 'супер цена', './assets/img/carts/1.png')
+        +cart('3 400 руб.', 'Букет «Мечта»', 'новинка', 'супер цена', './assets/img/carts/2.png')
+        +cart('3 450 руб.', 'Букет с цветами «Желание»', 'новинка', 'супер цена', './assets/img/carts/3.png')
+        +cart('3 750 руб.', 'Корзина с сезонными цветами', 'новинка', 'супер цена', './assets/img/carts/4.png')

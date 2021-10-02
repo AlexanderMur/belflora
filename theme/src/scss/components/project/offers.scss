@@ -1,0 +1,11 @@
+.offers-section {
+  padding-top: 60px;
+  padding-bottom: 80px;
+}
+
+@media(max-width: 768px){
+  .offers-section{
+    padding-top: 32px;
+  padding-bottom: 32px;
+  }
+}

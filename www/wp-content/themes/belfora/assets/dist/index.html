@@ -1,0 +1,839 @@
+<!DOCTYPE html>
+<html class="no-js" lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+    <title>Главная :: Frontend pack</title>
+    <!--
+    link(rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png")
+    link(rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png")
+    link(rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png")
+    link(rel="manifest" href="assets/site.webmanifest")
+    link(rel="mask-icon" href="assets/safari-pinned-tab.svg" color="#ffffff")
+    link(rel="shortcut icon" href="assets/favicon.ico")
+    meta(name="msapplication-TileColor" content="#ffffff")
+    meta(name="msapplication-config" content="assets/browserconfig.xml")
+    meta(name="theme-color" content="#ffffff")
+    
+    -->
+    <meta name="description" content="Description">
+    <meta property="og:url" content="https://">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="title">
+    <meta property="twitter:title" content="title">
+    <meta property="og:description" content="description">
+    <meta property="twitter:description" content="description">
+    <meta property="og:image" content="assets/share.png">
+    <link href="https://fonts.googleapis.com/css2?family=Oranienbaum&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oranienbaum&amp;family=PT+Sans:wght@400;700&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/common.css">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+  </head>
+  <body class="body">
+    <div class="header">
+      <div class="container">
+        <div class="header__wrap"> 
+          <div class="mobile-search"> 
+            <div class="search search-main"> 
+              <button class="circle__button search__btn -js-searchopen">
+                    <svg class="svgsprite _search">
+                      <use xlink:href="assets/img/sprites/svgsprites.svg#search"></use>
+                    </svg>
+              </button>
+              <input class="search__input" type="text" placeholder="Поиск...">
+              <button class="search__close -js-searchclose">
+                    <svg class="svgsprite _close">
+                      <use xlink:href="assets/img/sprites/svgsprites.svg#close"></use>
+                    </svg>
+              </button>
+            </div>
+          </div>
+          <nav class="nav header__nav"><a class="nav__link" href="catalog.html">Каталог</a><a class="nav__link" href="reports.html">Отзывы</a><a class="nav__link" href="pay.html">Доставка и оплата</a></nav><a class="header__logo" href="index.html"> <img src="./assets/img/logo.svg" alt=""></a>
+          <div class="header__info">
+            <div class="work-time">Принимаем заказы 24/7</div>
+            <div class="header__buttons">
+              <button class="circle__button circle__button--phone">
+                    <svg class="svgsprite _phone">
+                      <use xlink:href="assets/img/sprites/svgsprites.svg#phone"></use>
+                    </svg>
+                <div class="tooltip --mright">
+                  <div class="contact contact--margin">
+                    <p class="text-title">+ 7 (924) 240-90-74</p><a class="grey-description" href="#">Заказать звонок </a>
+                  </div>
+                  <div class="contact contact--margin">
+                    <p class="text-title">Проспект славы, 86</p>
+                    <div class="grey-description" href="#">с 8 до 20:00, без выходных</div>
+                  </div><a class="contact contact--social">
+                    <div class="circle__button circle__button--inst --black">
+                          <svg class="svgsprite _inst">
+                            <use xlink:href="assets/img/sprites/svgsprites.svg#inst"></use>
+                          </svg>
+                    </div>
+                    <p class="text-title">Instagram</p></a>
+                </div>
+              </button><a class="circle__button" href="#">
+                    <svg class="svgsprite _heart">
+                      <use xlink:href="assets/img/sprites/svgsprites.svg#heart"></use>
+                    </svg>
+                <div class="feature__number">10</div></a>
+              <button class="circle__button circle__button--basket -js-fadeinbasket" href="#">
+                    <svg class="svgsprite _basket">
+                      <use xlink:href="assets/img/sprites/svgsprites.svg#basket"></use>
+                    </svg>
+                <div class="basket__number">3</div>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="mobile-menu"> 
+      <div class="conatiner"> 
+        <nav class="mobile-menu__nav">
+          <div class="accardeon"> 
+            <div class="accardeon__item"> 
+              <div class="accardeon__main">Каталог букетов</div>
+              <div class="accardeon__drop">
+                <div class="mobile-menu__link"> <a class="nav__link" href="#">Сыылка</a></div>
+                <div class="mobile-menu__link"> <a class="nav__link" href="#">Сыылка</a></div>
+              </div>
+            </div>
+            <div class="accardeon__item"> 
+              <div class="accardeon__main">Подарки</div>
+              <div class="accardeon__drop">
+                <div class="mobile-menu__link"> <a class="nav__link" href="#">Сыылка</a></div>
+                <div class="mobile-menu__link"> <a class="nav__link" href="#">Сыылка</a></div>
+              </div>
+            </div>
+            <div class="mobile-menu__link"> <a class="nav__link" href="#">О нас</a></div>
+            <div class="mobile-menu__link"> <a class="nav__link" href="#">Оплата и доставка</a></div>
+            <div class="mobile-menu__link"> <a class="nav__link" href="#">Отзывы</a></div>
+            <div class="mobile-menu__link"> <a class="nav__link" href="#">Контакты</a></div>
+          </div>
+        </nav>
+        <div class="mobile-menu__contacts">
+          <div class="footer__contact">
+            <div class="footer__circle">
+                  <svg class="svgsprite _marker">
+                    <use xlink:href="assets/img/sprites/svgsprites.svg#marker"></use>
+                  </svg>
+            </div>
+            <div class="contact">
+              <p class="text-title">Проспект славы, 86</p>
+              <div class="grey-description">с 8 до 20:00, без выходных</div>
+            </div>
+          </div>
+          <div class="footer__contact">
+            <div class="footer__circle">
+                  <svg class="svgsprite _phone-footer">
+                    <use xlink:href="assets/img/sprites/svgsprites.svg#phone-footer"></use>
+                  </svg>
+            </div>
+            <div class="contact">
+              <p class="text-title">+ 7 (924) 240-90-74</p><a class="grey-description" href="#">Заказать звонок </a>
+            </div>
+          </div>
+          <div class="footer__contact">
+            <div class="footer__circle">
+                  <svg class="svgsprite _inst">
+                    <use xlink:href="assets/img/sprites/svgsprites.svg#inst"></use>
+                  </svg>
+            </div>
+            <div class="contact">
+              <p class="text-title">Instagram</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="content">
+          <section class="main-banner --background-1">
+            <div class="container">
+                  <div class="crumbs --white --center crumbs--mainbanner"><a class="crumbs__link" href="#">Главная страница</a><a class="crumbs__link" href="#">Каталог коллекций</a>
+                  </div>
+              <h1 class="main-banner__title --white">Каталог коллекций</h1>
+              <div class="main-banner__search">
+                <div class="search search-main"> 
+                  <button class="circle__button search__btn -js-searchopen">
+                        <svg class="svgsprite _search">
+                          <use xlink:href="assets/img/sprites/svgsprites.svg#search"></use>
+                        </svg>
+                  </button>
+                  <input class="search__input" type="text" placeholder="Поиск...">
+                  <button class="search__close -js-searchclose">
+                        <svg class="svgsprite _close">
+                          <use xlink:href="assets/img/sprites/svgsprites.svg#close"></use>
+                        </svg>
+                  </button>
+                </div>
+                <div class="main-banner__items">
+                  <div class="main-banner__item"><img class="main-banner__ico" src="./assets/img/banners/i1.svg" alt="">
+                    <p class="main-banner__text">Монобукеты</p>
+                  </div>
+                  <div class="main-banner__item"><img class="main-banner__ico" src="./assets/img/banners/i2.svg" alt="">
+                    <p class="main-banner__text">Сборные букеты</p>
+                  </div>
+                  <div class="main-banner__item"><img class="main-banner__ico" src="./assets/img/banners/i3.svg" alt="">
+                    <p class="main-banner__text">Композиции</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+      <section class="section-carts"> 
+        <div class="container">
+          <h2 class="carts__title">Online витрина</h2>
+          <div class="carts__wrap carts-list carts-list-4">
+                <div class="cart">
+                  <div class="cart__top">
+                    <div class="cart__pic">
+                      <div class="cart__pic-img lazy" data-src="./assets/img/carts/1.png"></div>
+                    </div>
+                    <div class="tags">
+                      <div class="tag --green">новинка</div>
+                      <div class="tag --orange">супер цена</div>
+                    </div>
+                    <div class="cart__buttons">
+                      <button class="button --dark -js-fadebuttons">В корзину</button><a class="button --grey" href="#">Смотреть букет</a>
+                    </div>
+                    <button class="cart__like">
+                          <svg class="svgsprite _heart-full">
+                            <use xlink:href="assets/img/sprites/svgsprites.svg#heart-full"></use>
+                          </svg>
+                    </button>
+                  </div>
+                  <div class="cart__bottom">
+                    <div class="cart__title">2 358 руб.</div>
+                    <div class="cart__text">Букет из 7 нежно розовых пионов</div>
+                  </div>
+                </div>
+                <div class="cart">
+                  <div class="cart__top">
+                    <div class="cart__pic">
+                      <div class="cart__pic-img lazy" data-src="./assets/img/carts/2.png"></div>
+                    </div>
+                    <div class="tags">
+                      <div class="tag --green">новинка</div>
+                      <div class="tag --orange">супер цена</div>
+                    </div>
+                    <div class="cart__buttons">
+                      <button class="button --dark -js-fadebuttons">В корзину</button><a class="button --grey" href="#">Смотреть букет</a>
+                    </div>
+                    <button class="cart__like">
+                          <svg class="svgsprite _heart-full">
+                            <use xlink:href="assets/img/sprites/svgsprites.svg#heart-full"></use>
+                          </svg>
+                    </button>
+                  </div>
+                  <div class="cart__bottom">
+                    <div class="cart__title">3 400 руб.</div>
+                    <div class="cart__text">Букет «Мечта»</div>
+                  </div>
+                </div>
+                <div class="cart">
+                  <div class="cart__top">
+                    <div class="cart__pic">
+                      <div class="cart__pic-img lazy" data-src="./assets/img/carts/3.png"></div>
+                    </div>
+                    <div class="tags">
+                      <div class="tag --green">новинка</div>
+                      <div class="tag --orange">супер цена</div>
+                    </div>
+                    <div class="cart__buttons">
+                      <button class="button --dark -js-fadebuttons">В корзину</button><a class="button --grey" href="#">Смотреть букет</a>
+                    </div>
+                    <button class="cart__like">
+                          <svg class="svgsprite _heart-full">
+                            <use xlink:href="assets/img/sprites/svgsprites.svg#heart-full"></use>
+                          </svg>
+                    </button>
+                  </div>
+                  <div class="cart__bottom">
+                    <div class="cart__title">3 450 руб.</div>
+                    <div class="cart__text">Букет с цветами «Желание»</div>
+                  </div>
+                </div>
+                <div class="cart">
+                  <div class="cart__top">
+                    <div class="cart__pic">
+                      <div class="cart__pic-img lazy" data-src="./assets/img/carts/4.png"></div>
+                    </div>
+                    <div class="tags">
+                      <div class="tag --green">новинка</div>
+                      <div class="tag --orange">супер цена</div>
+                    </div>
+                    <div class="cart__buttons">
+                      <button class="button --dark -js-fadebuttons">В корзину</button><a class="button --grey" href="#">Смотреть букет</a>
+                    </div>
+                    <button class="cart__like">
+                          <svg class="svgsprite _heart-full">
+                            <use xlink:href="assets/img/sprites/svgsprites.svg#heart-full"></use>
+                          </svg>
+                    </button>
+                  </div>
+                  <div class="cart__bottom">
+                    <div class="cart__title">3 750 руб.</div>
+                    <div class="cart__text">Корзина с сезонными цветами</div>
+                  </div>
+                </div>
+                <div class="cart">
+                  <div class="cart__top">
+                    <div class="cart__pic">
+                      <div class="cart__pic-img lazy" data-src="./assets/img/carts/5.png"></div>
+                    </div>
+                    <div class="tags">
+                      <div class="tag --green">новинка</div>
+                      <div class="tag --orange">супер цена</div>
+                    </div>
+                    <div class="cart__buttons">
+                      <button class="button --dark -js-fadebuttons">В корзину</button><a class="button --grey" href="#">Смотреть букет</a>
+                    </div>
+                    <button class="cart__like">
+                          <svg class="svgsprite _heart-full">
+                            <use xlink:href="assets/img/sprites/svgsprites.svg#heart-full"></use>
+                          </svg>
+                    </button>
+                  </div>
+                  <div class="cart__bottom">
+                    <div class="cart__title">6 870 руб.</div>
+                    <div class="cart__text">Букет «Признание»</div>
+                  </div>
+                </div>
+                <div class="cart">
+                  <div class="cart__top">
+                    <div class="cart__pic">
+                      <div class="cart__pic-img lazy" data-src="./assets/img/carts/6.png"></div>
+                    </div>
+                    <div class="tags">
+                      <div class="tag --green">новинка</div>
+                      <div class="tag --orange">супер цена</div>
+                    </div>
+                    <div class="cart__buttons">
+                      <button class="button --dark -js-fadebuttons">В корзину</button><a class="button --grey" href="#">Смотреть букет</a>
+                    </div>
+                    <button class="cart__like">
+                          <svg class="svgsprite _heart-full">
+                            <use xlink:href="assets/img/sprites/svgsprites.svg#heart-full"></use>
+                          </svg>
+                    </button>
+                  </div>
+                  <div class="cart__bottom">
+                    <div class="cart__title">3 200 руб.</div>
+                    <div class="cart__text">Корзина с сезонными цветами</div>
+                  </div>
+                </div>
+                <div class="cart">
+                  <div class="cart__top">
+                    <div class="cart__pic">
+                      <div class="cart__pic-img lazy" data-src="./assets/img/carts/7.png"></div>
+                    </div>
+                    <div class="tags">
+                      <div class="tag --green">новинка</div>
+                      <div class="tag --orange">супер цена</div>
+                    </div>
+                    <div class="cart__buttons">
+                      <button class="button --dark -js-fadebuttons">В корзину</button><a class="button --grey" href="#">Смотреть букет</a>
+                    </div>
+                    <button class="cart__like">
+                          <svg class="svgsprite _heart-full">
+                            <use xlink:href="assets/img/sprites/svgsprites.svg#heart-full"></use>
+                          </svg>
+                    </button>
+                  </div>
+                  <div class="cart__bottom">
+                    <div class="cart__title">1 950 руб.</div>
+                    <div class="cart__text">Букет «Вдохновение»</div>
+                  </div>
+                </div>
+                <div class="cart">
+                  <div class="cart__top">
+                    <div class="cart__pic">
+                      <div class="cart__pic-img lazy" data-src="./assets/img/carts/8.png"></div>
+                    </div>
+                    <div class="tags">
+                      <div class="tag --green">новинка</div>
+                      <div class="tag --orange">супер цена</div>
+                    </div>
+                    <div class="cart__buttons">
+                      <button class="button --dark -js-fadebuttons">В корзину</button><a class="button --grey" href="#">Смотреть букет</a>
+                    </div>
+                    <button class="cart__like">
+                          <svg class="svgsprite _heart-full">
+                            <use xlink:href="assets/img/sprites/svgsprites.svg#heart-full"></use>
+                          </svg>
+                    </button>
+                  </div>
+                  <div class="cart__bottom">
+                    <div class="cart__title">3 200 руб.</div>
+                    <div class="cart__text">Букет «Радуга»</div>
+                  </div>
+                </div>
+                <div class="cart">
+                  <div class="cart__top">
+                    <div class="cart__pic">
+                      <div class="cart__pic-img lazy" data-src="./assets/img/carts/9.png"></div>
+                    </div>
+                    <div class="tags">
+                      <div class="tag --green">новинка</div>
+                      <div class="tag --orange">супер цена</div>
+                    </div>
+                    <div class="cart__buttons">
+                      <button class="button --dark -js-fadebuttons">В корзину</button><a class="button --grey" href="#">Смотреть букет</a>
+                    </div>
+                    <button class="cart__like">
+                          <svg class="svgsprite _heart-full">
+                            <use xlink:href="assets/img/sprites/svgsprites.svg#heart-full"></use>
+                          </svg>
+                    </button>
+                  </div>
+                  <div class="cart__bottom">
+                    <div class="cart__title">3 750 руб.</div>
+                    <div class="cart__text">Букет «Грация»</div>
+                  </div>
+                </div>
+                <div class="cart">
+                  <div class="cart__top">
+                    <div class="cart__pic">
+                      <div class="cart__pic-img lazy" data-src="./assets/img/carts/10.png"></div>
+                    </div>
+                    <div class="tags">
+                      <div class="tag --green">новинка</div>
+                      <div class="tag --orange">супер цена</div>
+                    </div>
+                    <div class="cart__buttons">
+                      <button class="button --dark -js-fadebuttons">В корзину</button><a class="button --grey" href="#">Смотреть букет</a>
+                    </div>
+                    <button class="cart__like">
+                          <svg class="svgsprite _heart-full">
+                            <use xlink:href="assets/img/sprites/svgsprites.svg#heart-full"></use>
+                          </svg>
+                    </button>
+                  </div>
+                  <div class="cart__bottom">
+                    <div class="cart__title">2 450 руб.</div>
+                    <div class="cart__text">Букет «Оттенки нежности»</div>
+                  </div>
+                </div>
+                <div class="cart">
+                  <div class="cart__top">
+                    <div class="cart__pic">
+                      <div class="cart__pic-img lazy" data-src="./assets/img/carts/11.png"></div>
+                    </div>
+                    <div class="tags">
+                      <div class="tag --green">новинка</div>
+                      <div class="tag --orange">супер цена</div>
+                    </div>
+                    <div class="cart__buttons">
+                      <button class="button --dark -js-fadebuttons">В корзину</button><a class="button --grey" href="#">Смотреть букет</a>
+                    </div>
+                    <button class="cart__like">
+                          <svg class="svgsprite _heart-full">
+                            <use xlink:href="assets/img/sprites/svgsprites.svg#heart-full"></use>
+                          </svg>
+                    </button>
+                  </div>
+                  <div class="cart__bottom">
+                    <div class="cart__title">4 200 руб.</div>
+                    <div class="cart__text">Коробка с цветами «Танго»</div>
+                  </div>
+                </div>
+                <div class="cart">
+                  <div class="cart__top">
+                    <div class="cart__pic">
+                      <div class="cart__pic-img lazy" data-src="./assets/img/carts/12.png"></div>
+                    </div>
+                    <div class="tags">
+                      <div class="tag --green">новинка</div>
+                      <div class="tag --orange">супер цена</div>
+                    </div>
+                    <div class="cart__buttons">
+                      <button class="button --dark -js-fadebuttons">В корзину</button><a class="button --grey" href="#">Смотреть букет</a>
+                    </div>
+                    <button class="cart__like">
+                          <svg class="svgsprite _heart-full">
+                            <use xlink:href="assets/img/sprites/svgsprites.svg#heart-full"></use>
+                          </svg>
+                    </button>
+                  </div>
+                  <div class="cart__bottom">
+                    <div class="cart__title">2 450 руб.</div>
+                    <div class="cart__text">Коробки с цветами «Восторг»</div>
+                  </div>
+                </div>
+          </div>
+        </div>
+      </section>
+      <section class="section-catalogs">
+        <div class="container">
+          <div class="title-text"> 
+            <h2 class="--text">Коллекции букетов</h2>
+            <p class="text">В нашем магазине вы можете заказать букеты для самых разных праздников, ознакомьтесь с коллекциями</p>
+          </div>
+          <div class="catalog">
+            <div class="catalogs__list"><a class="catalog__item" href="catalog-filter.html">
+                    <div class="catalog__bg lazy" data-src="./assets/img/catalog/1.png"></div>
+                    <h3 class="catalog__title">Все букеты</h3></a><a class="catalog__item" href="catalog-filter.html">
+                    <div class="catalog__bg lazy" data-src="./assets/img/catalog/2.png"></div>
+                    <h3 class="catalog__title">Пионы</h3></a><a class="catalog__item" href="catalog-filter.html">
+                    <div class="catalog__bg lazy" data-src="./assets/img/catalog/3.png"></div>
+                    <h3 class="catalog__title">Авторские букеты</h3></a><a class="catalog__item" href="catalog-filter.html">
+                    <div class="catalog__bg lazy" data-src="./assets/img/catalog/4.png"></div>
+                    <h3 class="catalog__title">Монобукеты</h3></a><a class="catalog__item" href="catalog-filter.html">
+                    <div class="catalog__bg lazy" data-src="./assets/img/catalog/5.png"></div>
+                    <h3 class="catalog__title">Коробки с цветами</h3></a><a class="catalog__item" href="catalog-filter.html">
+                    <div class="catalog__bg lazy" data-src="./assets/img/catalog/6.png"></div>
+                    <h3 class="catalog__title">Огромные букеты</h3></a><a class="catalog__item" href="catalog-filter.html">
+                    <div class="catalog__bg lazy" data-src="./assets/img/catalog/7.png"></div>
+                    <h3 class="catalog__title">Ящики с цветами</h3></a><a class="catalog__item" href="catalog-filter.html">
+                    <div class="catalog__bg lazy" data-src="./assets/img/catalog/8.png"></div>
+                    <h3 class="catalog__title">Корзины с цветами</h3></a>
+            </div>
+          </div><a class="catalog__btn button --white" href="catalog.html">Еще коллекции</a>
+        </div>
+      </section>
+      <section class="page-banner-section">
+        <div class="container"> 
+              <div class="page-banner lazy" data-src="./assets/img/banners/pages.png">
+                <h2 class="page-banner__title">Не нашел, что искал? Собери на свой вкус</h2>
+                <div class="page-banner__btn"><a class="button --dark" href="catalog.html">Подобрать букет</a></div>
+              </div>
+        </div>
+      </section>
+      <section class="section-slider"> 
+        <div class="container"> 
+          <h2 class="section-slider__title"> Актуальное</h2>
+          <div class="main-slider swiper-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide main-slide" style="background-image: url('./assets/img/slider/1.png')">
+                <h3 class="main-slider__title"><span>30% </span>на пионы</h3>
+                <p class="text main-slider__text">Лучшая коллекция букетов с пионами на Belflora</p><a class="main-slider__link" href="#">Смотреть коллекцию </a>
+              </div>
+              <div class="swiper-slide main-slide" style="background-image: url('./assets/img/slider/2.png')">
+                <h3 class="main-slider__title"><span>Игрушка  </span>в подарок к букету</h3>
+                <p class="text main-slider__text">Лучшая коллекция букетов с пионами на Belflora</p><a class="main-slider__link" href="#">Смотреть коллекцию</a>
+              </div>
+              <div class="swiper-slide main-slide" style="background-image: url('./assets/img/slider/1.png')">
+                <h3 class="main-slider__title"><span>Игрушка  </span>в подарок к букету</h3>
+                <p class="text main-slider__text">Лучшая коллекция букетов с пионами на Belflora</p><a class="main-slider__link" href="#">Смотреть коллекцию</a>
+              </div>
+              <div class="swiper-slide main-slide" style="background-image: url('./assets/img/slider/2.png')">
+                <h3 class="main-slider__title"><span>Игрушка  </span>в подарок к букету</h3>
+                <p class="text main-slider__text">Лучшая коллекция букетов с пионами на Belflora</p><a class="main-slider__link" href="#">Смотреть коллекцию</a>
+              </div>
+            </div>
+            <div class="slider-prev slider-button">
+                  <svg class="svgsprite _arrow-left">
+                    <use xlink:href="assets/img/sprites/svgsprites.svg#arrow-left"></use>
+                  </svg>
+            </div>
+            <div class="slider-next slider-button">
+                  <svg class="svgsprite _arrow-right">
+                    <use xlink:href="assets/img/sprites/svgsprites.svg#arrow-right"></use>
+                  </svg>
+            </div>
+          </div>
+        </div>
+      </section>
+          <section class="text-section">
+            <div class="container">
+              <div class="text-block">
+                <h2 class="text-block__title">Доставка цветов и букетов в Белгороде - от салона цветов Флора!</h2>
+                <div class="text-block__list">
+                  <div class="text__item">
+                    <p class="text">Букеты цветов никогда не выйдут из моды. Они способны поднимать настроение всем, кому они адресованы – женщинам, мужчинам, детям. Взяв с собой букет на выставку, презентацию, иное торжество, можно всегда оставаться в тренде. Более того, букеты можно дарить и просто так, проявляя внимание, заботу, уважение и привязанность.</p>
+                  </div>
+                  <div class="text__item">
+                    <p class="text">
+                       Интернет магазин цветов «Флора» оказывает <a href="#">услуги по комплексному и вертикальному озеленению </a>интерьеров торговых центров, жилых домов, офисов, предприятий, используя как живые так и искусственные растения самого высокого качества.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="text-block">
+                <h2 class="text-block__title">Свадебная флористика</h2>
+                <div class="text-block__list">
+                  <div class="text__item">
+                    <p class="text"><a href="#">Свадебная флористика  </a>– одно из самых любимых направлений в работе салонов «Флора», ведь  стильное флористическое оформление и оригинальный декор – важная часть любой современной свадьбы, именно это создаёт особое настроение  и идеальную обстановку для такого важного в жизни каждой пары момента. Лучший вариант подбирается индивидуально для каждой пары и вне зависимости от бюджета, создаётся праздник,в котором каждая деталь идеально гармонирует.</p>
+                  </div>
+                  <div class="text__item">
+                    <p class="text"> <a href="#">Новогодняя флористика </a>и декор, оформление торжеств и мероприятий – специалисты салона знают, как праздник превратить в нечто большее, украсив интерьеры с учётом модных тенденций в области дизайна и флористики. </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+    </div>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__top">
+          <div class="footer__item">
+            <div class="footer__logo"><img src="./assets/img/logo.svg" alt=""></div>
+          </div>
+          <div class="footer__item">
+            <div class="footer__contact">
+              <div class="footer__circle">
+                    <svg class="svgsprite _marker">
+                      <use xlink:href="assets/img/sprites/svgsprites.svg#marker"></use>
+                    </svg>
+              </div>
+              <div class="contact">
+                <p class="text-title">Проспект славы, 86</p>
+                <div class="grey-description">с 8 до 20:00, без выходных</div>
+              </div>
+            </div>
+          </div>
+          <div class="footer__item">
+            <div class="footer__contact">
+              <div class="footer__circle">
+                    <svg class="svgsprite _phone-footer">
+                      <use xlink:href="assets/img/sprites/svgsprites.svg#phone-footer"></use>
+                    </svg>
+              </div>
+              <div class="contact">
+                <p class="text-title">+ 7 (924) 240-90-74</p><a class="grey-description" href="#">Заказать звонок </a>
+              </div>
+            </div>
+          </div>
+          <div class="footer__item">
+            <div class="footer__contact">
+              <div class="footer__circle">
+                    <svg class="svgsprite _inst">
+                      <use xlink:href="assets/img/sprites/svgsprites.svg#inst"></use>
+                    </svg>
+              </div>
+              <div class="contact">
+                <p class="text-title">Instagram</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer__center">
+          <div class="footer__item">
+            <p class="copyright">© Использование любого контента, размещенного на сайте, возможно только с разрешения правообладателей</p><img class="pay-img" src="./assets/img/payments.png" alt="">
+          </div>
+          <div class="footer__item">
+            <div class="footer__link"><a class="link" href="#">Online витрина</a></div>
+            <div class="footer__link"><a class="link" href="#">Коллекции</a></div>
+            <div class="footer__link"><a class="link" href="#">Актуальное</a></div>
+          </div>
+          <div class="footer__item">
+            <div class="footer__link"><a class="link" href="#">О нас</a></div>
+            <div class="footer__link"><a class="link" href="#">Доставка и оплата</a></div>
+          </div>
+          <div class="footer__item">
+            <div class="footer__link"><a class="link" href="#">Отзывы</a></div>
+            <div class="footer__link"> <a class="link" href="#">Контакты</a></div>
+          </div>
+        </div>
+        <div class="footer__bottom">
+          <p> <a href="#"> Политика конфиденциальности</a></p>
+          <p>
+             Разработка сайта <a href="#">QUADRA </a></p>
+        </div>
+      </div>
+    </footer>
+    <footer class="mobile-footer">
+      <div class="container"> 
+        <div class="accardeon"> 
+          <div class="accardeon__item">
+            <div class="accardeon__main">Контактная информация</div>
+            <div class="accardeon__drop">
+              <div class="footer__contact">
+                <div class="footer__circle">
+                      <svg class="svgsprite _marker">
+                        <use xlink:href="assets/img/sprites/svgsprites.svg#marker"></use>
+                      </svg>
+                </div>
+                <div class="contact">
+                  <p class="text-title">Проспект славы, 86</p>
+                  <div class="grey-description">с 8 до 20:00, без выходных</div>
+                </div>
+              </div>
+              <div class="footer__contact">
+                <div class="footer__circle">
+                      <svg class="svgsprite _phone-footer">
+                        <use xlink:href="assets/img/sprites/svgsprites.svg#phone-footer"></use>
+                      </svg>
+                </div>
+                <div class="contact">
+                  <p class="text-title">+ 7 (924) 240-90-74</p><a class="grey-description" href="#">Заказать звонок </a>
+                </div>
+              </div>
+              <div class="footer__contact">
+                <div class="footer__circle">
+                      <svg class="svgsprite _inst">
+                        <use xlink:href="assets/img/sprites/svgsprites.svg#inst"></use>
+                      </svg>
+                </div>
+                <div class="contact">
+                  <p class="text-title">Instagram</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="accardeon__item">
+            <div class="accardeon__main">Основные разделы</div>
+            <div class="accardeon__drop">
+              <div class="footer__link"><a class="link" href="#">Online витрина</a></div>
+              <div class="footer__link"><a class="link" href="#">Коллекции</a></div>
+              <div class="footer__link"><a class="link" href="#">Актуальное</a></div>
+              <div class="footer__link"><a class="link" href="#">Доставка и оплата</a></div>
+            </div>
+          </div>
+          <div class="accardeon__item">
+            <div class="accardeon__main">Информация о компании</div>
+            <div class="accardeon__drop">
+              <div class="footer__link"><a class="link" href="#">О нас</a></div>
+              <div class="footer__link"><a class="link" href="#">Отзывы</a></div>
+              <div class="footer__link"> <a class="link" href="#">Контакты</a></div>
+            </div>
+          </div>
+          <div class="accardeon__item">
+            <div class="accardeon__main">Способы оплаты</div>
+            <div class="accardeon__drop"><img class="pay-img" src="./assets/img/payments.png" alt=""></div>
+          </div>
+        </div>
+        <p class="copyright">© Использование любого контента, размещенного на сайте, возможно только с разрешения правообладателей</p>
+        <div class="footer__bottom">
+          <p> <a href="#"> Политика конфиденциальности</a></p>
+          <p>
+             Разработка сайта <a href="#">QUADRA </a></p>
+        </div>
+      </div>
+    </footer>
+    <div class="basket">
+      <div class="basket__bg -js-fadeoutbasket"></div>
+      <form class="basket__wrap">
+        <div class="basket__top">
+          <div class="basket__header">
+            <h2>Ваша корзина</h2>
+            <button class="basket__close -js-fadeoutbasket">
+                  <svg class="svgsprite _close">
+                    <use xlink:href="assets/img/sprites/svgsprites.svg#close"></use>
+                  </svg>
+            </button>
+          </div>
+          <div class="basket__body"> 
+                <div class="basket-cart">
+                  <div class="basket__left">
+                    <div class="basket-cart__pic"> <img src="./assets/img/carts/6.png"></div>
+                    <div class="basket-cart__info">
+                      <h5 class="basket-cart__title">Букет из кустовой хризантемы и кустовой розы</h5>
+                      <p class="text-grey basket-cart__text">51 штука</p>
+                      <div class="basket-cart__amount">
+                            <div class="counter"> 
+                              <div class="counter__minus">
+                                    <svg class="svgsprite _minus">
+                                      <use xlink:href="assets/img/sprites/svgsprites.svg#minus"></use>
+                                    </svg>
+                              </div>
+                              <input class="counter__input" type="text" disabled value="1">
+                              <div class="counter__plus">
+                                    <svg class="svgsprite _plus">
+                                      <use xlink:href="assets/img/sprites/svgsprites.svg#plus"></use>
+                                    </svg>
+                              </div>
+                            </div>
+                        <div class="basket-cart__summ summ">2 358 руб.</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="basket__right">
+                    <div class="basket-cart__close">
+                          <svg class="svgsprite _close-small">
+                            <use xlink:href="assets/img/sprites/svgsprites.svg#close-small"></use>
+                          </svg>
+                    </div>
+                  </div>
+                </div>
+          </div>
+        </div>
+        <div class="basket__bottom">  
+          <div class="basket__set"> 
+            <p>Добавить набор для продления жизни сразенных цветов?</p>
+            <div class="basket__radios">
+              <label class="basket__radio">
+                <input class="hidden" type="radio" name="set" checked>
+                <div class="basket__radio-button">Да</div>
+              </label>
+              <label class="basket__radio">
+                <input class="hidden" type="radio" name="set">
+                <div class="basket__radio-button">Нет</div>
+              </label>
+            </div>
+          </div>
+          <div class="basket__bottom-wrap">
+            <div class="basket__price price"> 
+              <div class="price-wrap">
+                <div class="prce__item"> 
+                  <h5>Стоимость </h5>
+                  <div class="price__number summ"> 7 212 руб.</div>
+                </div>
+              </div>
+              <div class="price-wrap">
+                <div class="prce__item"> 
+                  <h5>Cкидка </h5>
+                  <div class="price__number summ"> 0 руб.</div>
+                </div>
+              </div>
+            </div>
+            <div class="basket__buttons"> <a class="basket__button button --dark --big" href="#">Оформить заказ</a>
+              <button class="basket__button basket__button--close button --white --big -js-fadeoutbasket">Продолжить покупки</button>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+    <div class="mobile-bar">
+      <div class="mobile-bar__item">
+        <button class="mobile-bar__btn mobile-bar__btn--open -js-fadeoutbasket -js-fadeinmenu">
+          <div class="mobile-bar__ico">
+                <svg class="svgsprite _burger">
+                  <use xlink:href="assets/img/sprites/svgsprites.svg#burger"></use>
+                </svg>
+          </div>
+          <div class="mobile-bar__text">Меню</div>
+        </button>
+        <button class="mobile-bar__close -js-fadeoutmenu">
+          <div class="mobile-bar__ico">
+                <svg class="svgsprite _close">
+                  <use xlink:href="assets/img/sprites/svgsprites.svg#close"></use>
+                </svg>
+          </div>
+          <div class="mobile-bar__text">Закрыть</div>
+        </button>
+      </div>
+      <div class="mobile-bar__item">
+        <button class="mobile-bar__btn mobile-bar__btn--open -js-fadeinbasket -js-fadeoutmenu">
+          <div class="mobile-bar__ico">
+                <svg class="svgsprite _mobile-basket">
+                  <use xlink:href="assets/img/sprites/svgsprites.svg#mobile-basket"></use>
+                </svg>
+          </div>
+          <div class="mobile-bar__text">Корзина</div>
+        </button>
+        <button class="mobile-bar__close -js-fadeoutbasket"> 
+          <div class="mobile-bar__ico">
+                <svg class="svgsprite _close">
+                  <use xlink:href="assets/img/sprites/svgsprites.svg#close"></use>
+                </svg>
+          </div>
+          <div class="mobile-bar__text">Закрыть</div>
+        </button>
+      </div>
+      <div class="mobile-bar__item">
+        <!-- навесть .active если надо активной сделать, на странице избранное--><a class="mobile-bar__btn mobile-bar__btn--link" href="#"> 
+          <div class="mobile-bar__ico">
+                <svg class="svgsprite _feature">
+                  <use xlink:href="assets/img/sprites/svgsprites.svg#feature"></use>
+                </svg>
+          </div>
+          <div class="mobile-bar__text">Избранное</div></a>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"></script>
+    <script src="assets/js/vendors~main.bundle.js"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=1553c677-16fe-4d87-838c-fd3f2e9a8e63&amp;lang=ru_RU" type="text/javascript"></script>
+    <script src="assets/js/main.bundle.js?v=1.2.3"></script>
+  </body>
+</html>

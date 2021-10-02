@@ -1,0 +1,50 @@
+.stars{
+  display: flex;
+}
+
+.star{
+  margin-right: 8px;
+  .stars.--small &{
+    width: 14px;
+    height: 14px;
+    margin-right: 6px;
+    .svgsprite{
+      width: 15px;
+      height: 14px;
+    }
+  }
+
+  .svgsprite{
+    fill: #DBDCE4;
+  }
+
+  &.active {
+    .svgsprite{
+      fill: #FD5A7D;
+    }
+  }
+  &.hover {
+    .svgsprite{
+      fill: #FD5A7D;
+    }
+  }
+}
+
+
+@media(max-width: 980px){
+  .stars.--small .star .svgsprite{
+    width: 12px;
+    height: 12px;
+    margin-right: 4px;
+  }
+}
+
+
+@media(max-width: 768px){
+  .star{
+    margin-right: 6px;
+  }
+  .star .svgsprite{
+    width: 17px;
+  }
+}

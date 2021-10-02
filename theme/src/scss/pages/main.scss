@@ -1,0 +1,120 @@
+.section-slider {
+  background-color: #F5F5F5;
+  padding: 60px 0 85px;
+  overflow: hidden;
+}
+
+.main-slider{
+  position: relative;
+  overflow: inherit;
+}
+
+.main-slide{
+  height: 272px;
+  padding: 37px 20px 10px 60px;
+  background-color: #fff;
+  border-radius: $brs;
+  background-position: right top;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.main-slider {
+    h3 {
+        max-width: 320px;
+        margin-bottom: 18px;
+        line-height: 40px;
+    }
+    p {
+        max-width: 300px;
+        margin-bottom: 22px;
+        font-size: 20px
+    }
+    a {
+        display: inline-block;
+        border-bottom-color: inherit;
+        border-bottom-width: 1px;
+        border-bottom-style: solid;
+        transition: border-color .4s;
+        &:hover{
+            border-bottom-color: transparent;
+        }
+    }
+}
+
+.slider-button{
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #fff;
+  box-shadow: 0px 4px 20px rgba(75, 50, 54, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 50%;
+  z-index: 20;
+  cursor: pointer;
+}
+
+.slider-prev{
+  left: 0;
+  transform: translateY(-50%) translateX(-50%);
+}
+
+.slider-next{
+  right: 0;
+  transform: translateY(-50%) translateX(50%);
+}
+
+@media(max-width: 1350px){
+  .main-slider{
+    max-width: 90%;
+    margin-bottom: 0 auto;
+  }
+}
+
+@media(max-width: 1200px){
+  .main-slide{
+    background-position: top 0 right -100px;
+  }
+}
+
+@media(max-width: 980px){
+  .main-slide{
+    background-position: top 0 right 0;
+  }
+}
+
+@media(max-width: 768px){
+  .section-slider{
+    padding: 32px 0 40px;
+  }
+  .main-slider .slider-button{
+    display: none;
+  }
+  .main-slider{
+    max-width: calc(100% - 24px);
+  }
+  .main-slide{
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: center;
+    height: auto;
+    padding-top: 36px;
+    padding-bottom: 36px;
+    background-size: auto 50%;
+    background-position: right 0 bottom 0;
+  }
+
+  .main-slider__title{
+    margin: 0 auto 12px;
+    line-height: 24px;
+    max-width: 195px;
+  }
+
+  .main-slider__text{
+    max-width: 195px;
+    margin: 0 auto 16px
+  }
+}

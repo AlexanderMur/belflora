@@ -1,0 +1,56 @@
+// Commons
+@import "variables";
+@import "custom-reset";
+
+// External
+// @import "vendor/jquery.fancybox.css";
+
+@import "node_modules/magnific-popup/dist/magnific-popup";
+@import "node_modules/swiper/swiper.scss";
+@import "plugins/nouislider.scss";
+@import "node_modules/ldbutton/dist/ldbtn";
+@import "node_modules/air-datepicker/dist/css/datepicker";
+
+// Base
+@import "mixins";
+@import "base";
+@import "generated/svgsprites";
+@import "fonts";
+
+// Base components
+@import "components/base/btn";
+@import "components/base/content";
+@import "components/base/footer";
+@import "components/base/header";
+@import "components/base/lazy";
+@import "components/base/popup";
+@import "components/base/wordpress";
+
+
+// Project components
+@import "components/project/tooltip";
+@import "components/project/contact";
+@import "components/project/basket";
+@import "components/project/counter";
+@import "components/project/main-banner";
+@import "components/project/crumbs";
+@import "components/project/cart";
+@import "components/project/catalog";
+@import "components/project/page-banner";
+@import "components/project/text-section";
+@import "components/project/mobile-bar";
+@import "components/project/stars";
+@import "components/project/form";
+@import "components/project/offers";
+
+
+
+// Project pages
+@import "pages/main";
+@import "pages/catalog";
+@import "pages/product";
+@import "pages/pay";
+@import "pages/contacts";
+@import "pages/orders";
+@import "pages/steps";
+

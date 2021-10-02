@@ -1,0 +1,132 @@
+.circle__button{
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #F4F4F4;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color .4s;
+  &:hover{
+    background-color: #EBEBEC;
+  }
+
+  &.--black{
+    background-color: $color-base;
+  }
+}
+
+
+@media(max-width: 980px){
+  .circle__button {
+    width: 50px;
+    height: 50px;
+    .svgsprite {
+      width: 25px;
+    }
+  }
+}
+
+@media(max-width: 768px){
+  .circle__button {
+    width: 38px;
+    height: 38px;
+    .svgsprite {
+      width: 22px;
+    }
+  }
+}
+
+.button{
+  padding-left: 32px;
+  padding-right: 32px;
+  height: 60px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color .4s, border .4s;
+  border-radius: 6px;
+
+  &.--big{
+    height: 70px;
+    border-radius: 8px;
+  }
+
+  &.--small{
+    height: 40px;
+    border-radius: 4px;
+    font-size: 16px;
+    padding-left: 20px;
+    padding-right: 20px;
+
+  }
+
+  &.single_add_to_cart_button,
+  &.--dark{
+    background-color: #3C3C3C;
+    color: #fff;
+    &:hover{
+      background-color: #221E1E;
+    }
+  }
+
+  &.--white{
+    background-color: transparent;
+    border-color: #E4E7EF;
+    border-width: 1px;
+    border-style: solid;
+    &:hover{
+      border-color: inherit;
+    }
+  }
+  &.--grey{
+    background-color: #B3B7C2;
+    color: #fff;
+    &:hover{
+      background-color: #949AAA;
+    }
+  }
+
+  &.--lightgrey{
+    background-color: #F7F7F7;
+    color: #292223;
+    &:hover{
+      background-color: #292223;
+      color: #fff;
+    }
+  }
+
+}
+@media(max-width: 980px){
+  .button.--lightgrey{
+    height: 50px;
+    font-size: 15px;
+    padding-left: 10px;
+    padding-right: 15px;
+  }
+}
+@media(max-width: 768px){
+  .button.--small{
+    font-size: 13px;
+    padding-left: 13px;
+    padding-right: 13px;
+  }
+  .button.--big{
+    height: 50px;
+    font-size: 15px;
+    border-radius: 6px;
+  }
+
+  .button{
+    height: 50px;
+    font-size: 15px;
+  }
+
+  .button.--lightgrey{
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+}
+
+
+

@@ -1,0 +1,78 @@
+extends _includes/layout
+
+block config
+  - var pagetitle = 'Доставка и оплата'
+  - var bodyClass = ''
+block content
+  +main-banner-inner('Доставка и оплата')
+  section.section-delivery
+    .container 
+      .delivery
+        .title-text 
+          h2.--text Доставка цветов
+          p.text Свежие букеты цветов с доставкой на дом по Белгороду и Белгородской области
+        .delivery__price 
+          .delivery__block
+            .delivery__item
+              .delivery__name Доставка по Белгороду
+              .delivery__summ 250 руб
+            .delivery__item
+              .delivery__name Срочная доставка
+              .delivery__summ 250 руб
+          .delivery__block
+            .delivery__item
+              .delivery__name Алексеевка ближняя Короч. р-н
+              .delivery__summ 1000 руб
+            .delivery__item
+              .delivery__name Алексеевка дальняя
+              .delivery__summ 4300 руб
+            .delivery__item
+              .delivery__name Алексеевка Волоконовский  р-н
+              .delivery__summ 2600 руб
+            .delivery__item
+              .delivery__name Безымено с.  Грайворонский р-н
+              .delivery__summ 2400 руб
+  section.pay-section
+    .container
+      .pay 
+        h2.pay__title Способы оплаты заказа
+        .pay__list
+          a.pay__item(href="#")
+            .pay_ico
+              +svgsprite('bank')
+            p.pay__text  Банковская карта
+          a.pay__item(href="#")
+            .pay_ico
+              +svgsprite('paypall')
+            p.pay__text  Электронные деньги
+          a.pay__item(href="#")
+            .pay_ico
+              +svgsprite('rub')
+            p.pay__text  Наличными в магазине
+          a.pay__item(href="#")
+            .pay_ico
+              +svgsprite('paper')
+            p.pay__text Перевод на расчетный счет юр. лица
+  section.how-section 
+    .container
+      .how
+        h2.how-section__title Как происходит оплата?
+        .how-section__list
+          .how-section__item 
+            p 1. На странице авторизации потребуется ввести номер карты, имя владельца карты, срок действия карты, верификационный номер карты
+          .how-section__item 
+            p 2. Для оплаты Вы будете перенаправлены на страницу банка. Произвести оплату необходимо в течение 15 минут после перехода на страницу авторизации карточки.
+          .how-section__item 
+            p 3. Для выбора оплаты товара с помощью банковской карты на соответствующей странице необходимо нажать кнопку «Оплата заказа банковской картой».
+  section.text-section
+    .container
+      .text-block
+        h2.text-block__title Доставка цветов и букетов в Белгороде - от салона цветов Флора!
+        .text-block__list
+          .text__item
+            p.text Букеты цветов никогда не выйдут из моды. Они способны поднимать настроение всем, кому они адресованы – женщинам, мужчинам, детям. Взяв с собой букет на выставку, презентацию, иное торжество, можно всегда оставаться в тренде. Более того, букеты можно дарить и просто так, проявляя внимание, заботу, уважение и привязанность.
+          .text__item
+            p.text 
+              | Интернет магазин цветов «Флора» оказывает 
+              a(href="#") услуги по комплексному и вертикальному озеленению 
+              | интерьеров торговых центров, жилых домов, офисов, предприятий, используя как живые так и искусственные растения самого высокого качества.

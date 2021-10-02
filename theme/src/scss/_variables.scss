@@ -1,0 +1,30 @@
+/* Main Colors */
+$color-base : #292223;
+$color-bg : #fff;
+$color-text : $color-base;
+$color-overlay : $color-base;
+$opacity-overlay: .4;
+$link-color : $color-base;
+
+
+
+/* Fonts */
+$font-family : 'PT Sans', sans-serif;
+$font-title: 'Oranienbaum', serif;
+$font-size : 18px;
+$font-weight : normal;
+$letter-spacing : normal;
+$line-height : 1.2;
+$placeholder: #B3B7C2;
+
+
+
+/*container*/
+$container-padding-left: 25px;
+$container-padding-right: 25px;
+$container-width: 1260px + $container-padding-left + $container-padding-right;
+
+
+/*styles*/
+
+$brs: 10px;

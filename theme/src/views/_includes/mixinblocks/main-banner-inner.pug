@@ -1,0 +1,22 @@
+mixin main-banner-inner(title)
+  section.main-banner.--background-3
+    .container
+      +crumbs('Главная страница', 'Каталог коллекций')(class="--white --center crumbs--mainbanner")
+      h1.main-banner__title.--white=title
+      .main-banner__search
+        .search.search-main 
+          button.circle__button.search__btn.-js-searchopen
+            +svgsprite('search')
+          input.search__input(type="text" placeholder="Поиск...")
+          button.search__close.-js-searchclose
+            +svgsprite('close')
+        .main-banner__items
+          .main-banner__item
+            img.main-banner__ico(src="./assets/img/banners/i1.svg", alt="")
+            p.main-banner__text Монобукеты
+          .main-banner__item
+            img.main-banner__ico(src="./assets/img/banners/i2.svg", alt="")
+            p.main-banner__text Сборные букеты
+          .main-banner__item
+            img.main-banner__ico(src="./assets/img/banners/i3.svg", alt="")
+            p.main-banner__text Композиции

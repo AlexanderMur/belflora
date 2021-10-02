@@ -1,0 +1,44 @@
+.counter{
+  border-radius: $brs;
+  background-color: #F7F7F7;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 103px;
+  user-select: none; 
+
+  &__plus,
+  &__minus{
+    cursor: pointer;
+    width: 30px;
+    height: 56px;
+    display: flex;
+    align-items: center;
+  }
+  &__minus{
+    justify-content: flex-end;
+  }
+  .counter__input{
+    text-align: center;
+    font-weight: bold;
+    width: calc(100% - 60px);
+    background-color: transparent;
+    border: none;
+    cursor: default;
+  }
+}
+
+
+@media(max-width: 768px){
+  .counter{
+    border-radius: 6px;
+    margin-right: 0px;
+  }
+  .counter__plus, .counter__minus{
+    height: 40px;
+  }
+
+  .counter .counter__input{
+    font-size: 15px;
+  }
+}

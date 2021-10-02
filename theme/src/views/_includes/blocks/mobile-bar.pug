@@ -1,0 +1,25 @@
+.mobile-bar
+  .mobile-bar__item
+    button.mobile-bar__btn.mobile-bar__btn--open.-js-fadeoutbasket.-js-fadeinmenu
+      .mobile-bar__ico
+        +svgsprite('burger')
+      .mobile-bar__text Меню
+    button.mobile-bar__close.-js-fadeoutmenu
+      .mobile-bar__ico
+        +svgsprite('close')
+      .mobile-bar__text Закрыть
+  .mobile-bar__item
+    button.mobile-bar__btn.mobile-bar__btn--open.-js-fadeinbasket.-js-fadeoutmenu
+      .mobile-bar__ico
+         +svgsprite('mobile-basket')
+      .mobile-bar__text Корзина
+    button.mobile-bar__close.-js-fadeoutbasket 
+      .mobile-bar__ico
+        +svgsprite('close')
+      .mobile-bar__text Закрыть
+  .mobile-bar__item
+    // навесть .active если надо активной сделать, на странице избранное
+    a.mobile-bar__btn.mobile-bar__btn--link(href="#") 
+      .mobile-bar__ico
+        +svgsprite('feature')
+      .mobile-bar__text Избранное

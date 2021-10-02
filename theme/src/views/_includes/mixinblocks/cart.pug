@@ -1,0 +1,16 @@
+mixin cart(price, text, taggreen, tagorange, src)
+  .cart
+    .cart__top
+      .cart__pic
+        .cart__pic-img.lazy(data-src=src)
+      .tags
+        .tag.--green= taggreen
+        .tag.--orange= tagorange
+      .cart__buttons
+        button.button.--dark.-js-fadebuttons В корзину
+        a.button.--grey(href="#") Смотреть букет
+      button.cart__like
+        +svgsprite('heart-full')
+    .cart__bottom
+      .cart__title= price
+      .cart__text= text

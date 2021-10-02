@@ -1,0 +1,30 @@
+block config
+
+doctype html
+html(lang=__.lang, class="no-js")
+    head
+        block head
+            include head
+    body.body(class=bodyClass)
+        include mixins
+        include mixinblocks/basket-cart
+        include mixinblocks/main-banner
+        include mixinblocks/main-banner-filter
+        include mixinblocks/main-banner-inner
+        include mixinblocks/main-banner-form
+        include mixinblocks/cart
+        include mixinblocks/catalog
+        include mixinblocks/page-banner
+        include mixinblocks/text-section
+        include blocks/header
+        .content
+            block content
+        block uncontent
+        include blocks/footer
+
+        include blocks/basket
+        include blocks/mobile-bar
+        
+        block scripts-config
+        block scripts
+            include scripts

@@ -1,0 +1,62 @@
+extends _includes/layout
+
+block config
+  - var pagetitle = 'О нас говорят'
+  - var bodyClass = ''
+block content
+  +main-banner-inner('О нас говорят')
+  section.orders-section 
+    .container
+      .orders__list 
+        .orders 
+          .order__item 
+            .order__left
+              .order__date 21 Сент’ 2020
+              .order__name Анастасия
+              .order__country Белгород
+            .order__right
+              .order__stars
+                +stars-static('active', 'active', 'active', 'active', '')(class="--small")
+              .order__text Спасибо большое за красивый букет и своевременную доставку
+          .order__item 
+            .order__left
+              .order__date 13 Авг’ 2020
+              .order__name Артём
+              .order__country Белгород
+            .order__right
+              .order__stars
+                +stars-static('active', 'active', 'active', 'active', '')(class="--small")
+              .order__text Быстрая доставка, красивые и качественные букеты. Доставку оформил в пригород Белгорода. Все быстро и хорошо. Спасибо
+          .order__item 
+            .order__left
+              .order__date 13 Авг’ 2020
+              .order__name Артём
+              .order__country Белгород
+            .order__right
+              .order__stars
+                +stars-static('active', 'active', 'active', 'active', '')(class="--small")
+              .order__text Быстрая доставка, красивые и качественные букеты. Доставку оформил в пригород Белгорода. Все быстро и хорошо. Спасибо
+          .order__item 
+            .order__left
+              .order__date 13 Авг’ 2020
+              .order__name Артём
+              .order__country Белгород
+            .order__right
+              .order__stars
+                +stars-static('active', 'active', 'active', 'active', '')(class="--small")
+              .order__text Быстрая доставка, красивые и качественные букеты. Доставку оформил в пригород Белгорода. Все быстро и хорошо. Спасибо
+        +form('Оставьте отзыв')
+          +input('text', 'Ваше имя', 'Неправильный формат имени')
+          +input('text', 'Ваше город', 'Неправильный формат города')
+          +textarea('Текст отзыва', 'Неправильный формат')
+          +stars()
+          +checkbox('Даю согласие на обработку', 'персональных данных')
+          button.button.--dark.--big.form__buttom Отправить отзыв
+  section.offers-section 
+    .container
+      h2 Интересные предложения
+      .carts__wrap.carts-list.carts-list-4
+        +cart('2 358 руб.', 'Букет из 7 нежно розовых пионов', 'новинка', 'супер цена', './assets/img/carts/1.png')
+        +cart('3 400 руб.', 'Букет «Мечта»', 'новинка', 'супер цена', './assets/img/carts/2.png')
+        +cart('3 450 руб.', 'Букет с цветами «Желание»', 'новинка', 'супер цена', './assets/img/carts/3.png')
+        +cart('3 750 руб.', 'Корзина с сезонными цветами', 'новинка', 'супер цена', './assets/img/carts/4.png')

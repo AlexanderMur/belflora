@@ -1,0 +1,165 @@
+mixin main-banner-filter(title)
+  section.main-banner.--background-1
+    .container
+      +crumbs('Главная страница', 'Online витрина')(class="--white --center crumbs--mainbanner")
+      h1.main-banner__title.--white=title
+      form.main__banner-filter.main__banner-filter--desktop
+        .main__banner-items
+          .main-banner__item
+            .main-banner__tooltip
+              .main-banner__main.-js-fadeintooltip 
+                | Цветы&nbsp;
+                span.main-banner__main-number
+                .tooltip 
+                  .main-banner__main-title Цветы
+                  label.checkbox
+                    input.hidden(type="checkbox")
+                    span.checkbox__ico
+                    p.checkbox__text Розы
+                  label.checkbox
+                    input.hidden(type="checkbox")
+                    span.checkbox__ico
+                    p.checkbox__text Пионы
+                  label.checkbox
+                    input.hidden(type="checkbox")
+                    span.checkbox__ico
+                    p.checkbox__text Ирисы
+                  label.checkbox
+                    input.hidden(type="checkbox")
+                    span.checkbox__ico
+                    p.checkbox__text Гвоздики
+                  label.checkbox
+                    input.hidden(type="checkbox")
+                    span.checkbox__ico
+                    p.checkbox__text Ромашки
+                  label.checkbox
+                    input.hidden(type="checkbox")
+                    span.checkbox__ico
+                    p.checkbox__text Антуриум
+                  .main-banner__main-buttons 
+                    button.button.--white.--small.filter__buttom-close Закрыть
+                    button.button.--dark.--small.filter__buttom-apply Применить
+          .main-banner__item
+            .main-banner__tooltip
+              .main-banner__main.-js-fadeintooltip 
+                | Событие&nbsp;
+                span.main-banner__main-number
+                .tooltip 
+                  .main-banner__main-title Событие (0)
+                  label.checkbox
+                    input.hidden(type="checkbox")
+                    span.checkbox__ico
+                    p.checkbox__text Событие 1
+                  label.checkbox
+                    input.hidden(type="checkbox")
+                    span.checkbox__ico
+                    p.checkbox__text Событие 2
+                  label.checkbox
+                    input.hidden(type="checkbox")
+                    span.checkbox__ico
+                    p.checkbox__text Событие 3
+                  label.checkbox
+                    input.hidden(type="checkbox")
+                    span.checkbox__ico
+                    p.checkbox__text Событие 4
+                  .main-banner__main-buttons 
+                    button.button.--white.--small.filter__buttom-close Закрыть
+                    button.button.--dark.--small.filter__buttom-apply Применить
+          .main-banner__item
+            .main-banner__tooltip
+              .main-banner__main.-js-fadeintooltip Стоимость 
+                .tooltip
+                  .main-banner__main-title Стоимость
+                  .range
+                    .range__inputs
+                      .range__input.range__from
+                        input#range__from(type="text" disabled )
+                      .range__input.range__to
+                        input#range__to(type="text" disabled)
+                    #range-bar
+                  .main-banner__main-buttons 
+                    button.button.--white.--small.filter__buttom-close Закрыть
+                    button.button.--dark.--small.filter__buttom-apply Применить
+        .filter__reset Сбросить всё
+  .main__banner-filter--mobile
+    .container
+      a.back(href="catalog.html") Online витрина
+      .main__banner-scroll
+        form.main__banner-filter
+          .main__banner-items
+            .main-banner__item
+              .main-banner__tooltip
+                .main-banner__main.-js-fadeintooltip 
+                  | Цветы&nbsp;
+                  span.main-banner__main-number
+                  .tooltip 
+                    .main-banner__main-title Цветы
+                    label.checkbox
+                      input.hidden(type="checkbox")
+                      span.checkbox__ico
+                      p.checkbox__text Розы
+                    label.checkbox
+                      input.hidden(type="checkbox")
+                      span.checkbox__ico
+                      p.checkbox__text Пионы
+                    label.checkbox
+                      input.hidden(type="checkbox")
+                      span.checkbox__ico
+                      p.checkbox__text Ирисы
+                    label.checkbox
+                      input.hidden(type="checkbox")
+                      span.checkbox__ico
+                      p.checkbox__text Гвоздики
+                    label.checkbox
+                      input.hidden(type="checkbox")
+                      span.checkbox__ico
+                      p.checkbox__text Ромашки
+                    label.checkbox
+                      input.hidden(type="checkbox")
+                      span.checkbox__ico
+                      p.checkbox__text Антуриум
+                    .main-banner__main-buttons 
+                      button.button.--white.--small.filter__buttom-close Закрыть
+                      button.button.--dark.--small.filter__buttom-apply Применить
+            .main-banner__item
+              .main-banner__tooltip
+                .main-banner__main.-js-fadeintooltip 
+                  | Событие&nbsp; 
+                  span.main-banner__main-number
+                  .tooltip 
+                    .main-banner__main-title Событие
+                    label.checkbox
+                      input.hidden(type="checkbox")
+                      span.checkbox__ico
+                      p.checkbox__text Событие 1
+                    label.checkbox
+                      input.hidden(type="checkbox")
+                      span.checkbox__ico
+                      p.checkbox__text Событие 2
+                    label.checkbox
+                      input.hidden(type="checkbox")
+                      span.checkbox__ico
+                      p.checkbox__text Событие 3
+                    label.checkbox
+                      input.hidden(type="checkbox")
+                      span.checkbox__ico
+                      p.checkbox__text Событие 4
+                    .main-banner__main-buttons 
+                      button.button.--white.--small.filter__buttom-close Закрыть
+                      button.button.--dark.--small.filter__buttom-apply Применить
+            .main-banner__item
+              .main-banner__tooltip
+                .main-banner__main.-js-fadeintooltip Стоимость 
+                  .tooltip 
+                    .main-banner__main-title Стоимость 
+                    .range
+                      .range__inputs
+                        .range__input.range__from
+                          input#range__from(type="text" disabled )
+                        .range__input.range__to
+                          input#range__to(type="text" disabled)
+                      #range-bar
+                    .main-banner__main-buttons 
+                      button.button.--white.--small.filter__buttom-close Закрыть
+                      button.button.--dark.--small.filter__buttom-apply Применить
+          .filter__reset Сбросить всё

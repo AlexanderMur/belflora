@@ -1,0 +1,21 @@
+/*!
+Theme Name:   Belfora
+Author:       Mur
+Text Domain:  belfora
+
+ */
+
+.woocommerce-variation-price {
+    display: none;
+}
+
+form .product__item:first-child {
+    padding-top: 40px
+}
+.basket .variation {
+    color: #B3B7C2;
+}
+
+.wc_payment_methods img {
+    width: 64px;
+}

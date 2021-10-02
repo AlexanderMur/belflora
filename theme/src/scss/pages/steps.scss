@@ -1,0 +1,41 @@
+.steps__list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.steps__basket {
+  width: calc(100% - 600px);
+}
+
+.steps__basket-title{
+  text-align: center;
+  margin-bottom: 32px;
+  padding-top: 60px;
+}
+
+
+
+
+@media(max-width: 1150px){
+  .steps__basket{
+    width: calc(100% - 500px);
+  }
+}
+
+@media(max-width: 980px){
+  .steps__basket{
+    width: 100%;
+  }
+
+  .steps__list{
+    display: block;
+    .form{
+      width: 100%;
+      max-width: 100%;
+    }
+  }
+  .steps__basket-title{
+    padding-top: 32px;
+    margin-bottom: 20px;
+  }
+}

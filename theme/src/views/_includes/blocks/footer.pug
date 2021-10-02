@@ -1,0 +1,107 @@
+footer.footer
+  .container
+    .footer__top
+      .footer__item
+        .footer__logo
+          img(src="./assets/img/logo.svg", alt="")
+      .footer__item
+        .footer__contact
+          .footer__circle
+            +svgsprite('marker')
+          .contact
+            p.text-title Проспект славы, 86
+            .grey-description с 8 до 20:00, без выходных
+      .footer__item
+        .footer__contact
+          .footer__circle
+            +svgsprite('phone-footer')
+          .contact
+            p.text-title + 7 (924) 240-90-74
+            a.grey-description(href="#") Заказать звонок 
+      .footer__item
+        .footer__contact
+          .footer__circle
+            +svgsprite('inst')
+          .contact
+            p.text-title Instagram
+    .footer__center
+      .footer__item
+        p.copyright © Использование любого контента, размещенного на сайте, возможно только с разрешения правообладателей
+        img.pay-img(src="./assets/img/payments.png", alt="")
+      .footer__item
+        .footer__link
+          a.link(href="#") Online витрина
+        .footer__link
+          a.link(href="#") Коллекции
+        .footer__link
+          a.link(href="#") Актуальное
+      .footer__item
+        .footer__link
+          a.link(href="#") О нас
+        .footer__link
+          a.link(href="#") Доставка и оплата
+      .footer__item
+        .footer__link
+          a.link(href="#") Отзывы
+        .footer__link 
+          a.link(href="#") Контакты
+    .footer__bottom
+      p 
+        a(href="#")  Политика конфиденциальности
+      p 
+        | Разработка сайта 
+        a(href="#") QUADRA 
+footer.mobile-footer
+  .container 
+    .accardeon 
+      .accardeon__item
+        .accardeon__main Контактная информация
+        .accardeon__drop
+          .footer__contact
+            .footer__circle
+              +svgsprite('marker')
+            .contact
+              p.text-title Проспект славы, 86
+              .grey-description с 8 до 20:00, без выходных
+          .footer__contact
+            .footer__circle
+              +svgsprite('phone-footer')
+            .contact
+              p.text-title + 7 (924) 240-90-74
+              a.grey-description(href="#") Заказать звонок 
+          .footer__contact
+            .footer__circle
+              +svgsprite('inst')
+            .contact
+              p.text-title Instagram
+      .accardeon__item
+        .accardeon__main Основные разделы
+        .accardeon__drop
+          .footer__link
+            a.link(href="#") Online витрина
+          .footer__link
+            a.link(href="#") Коллекции
+          .footer__link
+            a.link(href="#") Актуальное
+          .footer__link
+            a.link(href="#") Доставка и оплата
+      .accardeon__item
+        .accardeon__main Информация о компании
+        .accardeon__drop
+          .footer__link
+            a.link(href="#") О нас
+          .footer__link
+            a.link(href="#") Отзывы
+          .footer__link 
+            a.link(href="#") Контакты
+      .accardeon__item
+        .accardeon__main Способы оплаты
+        .accardeon__drop
+          img.pay-img(src="./assets/img/payments.png", alt="")
+    p.copyright © Использование любого контента, размещенного на сайте, возможно только с разрешения правообладателей
+    .footer__bottom
+      p 
+        a(href="#")  Политика конфиденциальности
+      p 
+        | Разработка сайта 
+        a(href="#") QUADRA 

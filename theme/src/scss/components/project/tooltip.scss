@@ -1,0 +1,41 @@
+.tooltip{
+  background-color: #fff;
+  padding: 44px 32px;
+  border-radius: $brs;
+  position: absolute;
+  left: -20px;
+  top: calc(100% + 25px);
+  box-shadow: 6px 6px 30px rgba(62, 48, 50, 0.15);
+  width: 298px;
+  cursor: default;
+  display: none;
+  &:after{
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    left: 35px;
+    width: 27px;
+    height: 12px;
+    background: url(../img/tooltip/arrow.svg) no-repeat center bottom / contain;
+    margin-bottom: -1px;
+  }
+}
+
+
+@media(max-width: 1400px){
+  .tooltip.--mright{
+    left: auto;
+    right: -20px;
+    &:after{
+      left: auto;
+      right: 35px;
+    }
+  }
+}
+
+@media(max-width: 768px){
+  .tooltip.--mright{
+    padding: 20px;
+    width: 220px;
+  }
+}

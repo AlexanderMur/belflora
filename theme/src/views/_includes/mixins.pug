@@ -1,0 +1,84 @@
+mixin svgsprite(name)
+  svg(class="svgsprite _" + name)&attributes(attributes)
+    use(xlink:href="assets/img/sprites/svgsprites.svg#" + name)
+
+mixin counter()
+  .counter 
+    .counter__minus
+      +svgsprite('minus')
+    input.counter__input(type="text" disabled value="1")
+    .counter__plus
+      +svgsprite('plus')
+
+mixin crumbs(...items)
+  .crumbs&attributes(attributes)
+    each item in items
+      a.crumbs__link(href="#")=item 
+
+mixin stars
+  .stars.-js-starclick
+    .star
+      +svgsprite('star')
+    .star
+      +svgsprite('star')
+    .star
+      +svgsprite('star')
+    .star
+      +svgsprite('star')
+    .star
+      +svgsprite('star')
+
+mixin stars-static(...items)
+  .stars&attributes(attributes)
+    each item in items
+      .star(class=item)
+        +svgsprite('star')
+
+mixin input(typeInput, holder, error)
+  .form__block
+    input.form__input(type=typeInput placeholder=holder)
+    .form__error=error
+
+mixin textarea(holder, error)
+  .form__block
+    textarea.form__textarea(placeholder=holder)
+    .form__error=error
+
+mixin checkbox(text, link)
+  label.checkbox.form__checkbox
+    input.hidden(type="checkbox")
+    span.checkbox__ico
+    p.checkbox__text 
+      span=text
+      | &nbsp;
+      a(href="#")=link
+
+mixin select(title, ...items)
+  .select   
+    .select__main=title
+    .select__drop
+       each item in items
+        .select__item= item
+
+mixin calendar(title)
+  .form__block
+    .calendar   
+      .calendar__input
+        input.form__input(type="text")
+        .calendar__input-text  
+          span=title
+          +svgsprite('calendar')
+
+mixin radio(title, name)
+  label.radio
+    input.hidden(type="radio" name=name)
+    span.radio__circle
+    p.radio__text=title
+
+
+mixin form(title)
+  form.form
+    h4.form__title=title
+    if block 
+      block
+

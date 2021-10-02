@@ -1,0 +1,50 @@
+extends _includes/layout
+
+block config
+  - var pagetitle = 'Наши контакты'
+  - var bodyClass = ''
+block content
+  +main-banner-inner('Наши контакты')
+  section.contacts-section 
+    .container
+      .contacts   
+        .contacts__item
+          .contacts__block.--bg-1
+            .contacts__title Магазин на Проспекте славы
+            .contact__item 
+              .contact__ico 
+                +svgsprite('contact-marker')
+              .contact
+                p Проспект славы, 86
+            .contact__item 
+              .contact__ico 
+                +svgsprite('contact-phone')
+              .contact
+                p.text-title + 7 (924) 240-90-74
+                a.grey-description(href="#") Заказать звонок 
+            .contact__item 
+              .contact__ico
+                +svgsprite('clock')
+              .contact
+                p с 8:00 до 20:00, без выходных
+          .contacts__block.--bg-2
+            .contacts__title Магазин на Серафимовича
+            .contact__item 
+              .contact__ico 
+                +svgsprite('contact-marker')
+              .contact
+                p ул. Серафимовича, 67
+            .contact__item 
+              .contact__ico 
+                +svgsprite('contact-phone')
+              .contact
+                p.text-title +7 (920) 563-33-94
+                .grey-description(href="#") Оптовый отдел
+            .contact__item 
+              .contact__ico
+                +svgsprite('clock')
+              .contact
+                p с пн.-пт. с 9:00 до 18:00 
+                p сб. с 10:00 до 17:00, вс. - выходной
+        .contacts__map
+          #map.map

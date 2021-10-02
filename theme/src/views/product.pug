@@ -1,0 +1,121 @@
+extends _includes/layout
+
+block config
+  - var pagetitle = 'Предварительный каталог'
+  - var bodyClass = ''
+block content
+  section.product-section
+    .container 
+      +crumbs('Главная страница', 'Каталог букетов', 'Букет из кустовой хризмнтемы и кустовой розы')
+      .product
+        .product__slider
+          .product__slider__top
+            .swiper-container
+              .swiper-wrapper
+                .swiper-slide.product__slide(style="background: url(./assets/img/carts/1.png) no-repeat center / cover")
+                .swiper-slide.product__slide(style="background: url(./assets/img/carts/2.png) no-repeat center / cover")
+                .swiper-slide.product__slide(style="background: url(./assets/img/carts/3.png) no-repeat center / cover")
+                .swiper-slide.product__slide(style="background: url(./assets/img/carts/4.png) no-repeat center / cover")
+              .slider-prev.slider-button
+                +svgsprite('arrow-left')
+              .slider-next.slider-button
+                +svgsprite('arrow-right')
+          .product__slider-bottom 
+            .product__slider-item.active(style="background: url(./assets/img/carts/1.png) no-repeat center / cover")
+            .product__slider-item(style="background: url(./assets/img/carts/2.png) no-repeat center / cover") 
+            .product__slider-item(style="background: url(./assets/img/carts/3.png) no-repeat center / cover") 
+            .product__slider-item(style="background: url(./assets/img/carts/4.png) no-repeat center / cover")  
+          .product__like.product__like--mobile
+            +svgsprite('heart-full')
+        .product__content
+          .product__item
+            h2.product__title Коробка с цветами «Восторг»
+            .product__list 
+              .status Есть в наличии
+              .product__stars
+                +stars-static('active','active','active','active','')
+              p.product-reports-summ 2 отзыва
+            p.product__price 2 450 руб.
+          .product__item
+            p.product__description Выберите размер букета
+            .product__list
+              label.checkbox-button
+                input.hidden(type="radio" name="quantity")
+                .button.--lightgrey 35 штук
+              label.checkbox-button
+                input.hidden(type="radio" name="quantity")
+                .button.--lightgrey 51 штука
+              label.checkbox-button
+                input.hidden(type="radio" name="quantity")
+                .button.--lightgrey 101 штука
+          .product__item
+            p.product__description Количество
+            +counter
+            .count__description Минимальное количество заказа - 1 штука
+          .product__item
+            .product__list.product__list--btns
+              .product__btns 
+                button.button.--dark В корзину
+                button.button.--grey Купить в 1 клик
+              .product__like.product__like--desktop
+                +svgsprite('heart-full')
+          .accardeon
+            .accardeon__item
+              .accardeon__main Состав букета
+              .accardeon__drop
+                .catalog__structure
+                  .catalog__structure-item
+                    .catalog__structure-name Хризантемы
+                    .catalog__structure-summ 7 шт.
+                  .catalog__structure-item
+                    .catalog__structure-name Кустовые розы
+                    .catalog__structure-summ 5 шт.
+                  .catalog__structure-item
+                    .catalog__structure-name Упаковка
+                    .catalog__structure-summ 1 шт.
+                  .catalog__structure-item
+                    .catalog__structure-name Лента
+                    .catalog__structure-summ 1 шт.
+            .accardeon__item
+              .accardeon__main Отзывы  (2)
+              .accardeon__drop
+                p Хотите оставить отзыв о данном товаре?
+                .accardeon__main.accardeon__main-report Оставить отзыв
+                .accardeon__drop
+                  .product__form
+                    +form('Оставьте отзыв')
+                      +input('text', 'Ваше имя', 'Неправильный формат имени')
+                      +textarea('Текст отзыва', 'Неправильный формат')
+                      +stars()
+                      +checkbox('Даю согласие на обработку', 'персональных данных')
+                      button.button.--dark.--big.form__buttom Отправить отзыв
+                .product__reports
+                  .product__report
+                    p.product__report-text Спасибо большое за красивый букет и своевременную доставку!!! Заказ делала из Надыма, все легко и быстро оформила!
+                    .product__report-info
+                      .product__report-name Лилия
+                      .product__report-stars
+                        +stars-static('active','active','active','active','active')
+                      .product__report-date 23.06.2019
+                  .product__report--company
+                    .product__report
+                      p.product__report-text Спасибо большое за красивый букет и своевременную доставку!!! Заказ делала из Надыма, все легко и быстро оформила!
+                      .product__report-info
+                        .product__report-logo 
+                          img(src="./assets/img/logo.svg", alt="")
+                        .product__report-date 23.06.2019
+                  .product__report
+                    p.product__report-text Спасибо большое за красивый букет и своевременную доставку!!! Заказ делала из Надыма, все легко и быстро оформила!
+                    .product__report-info
+                      .product__report-name Лилия
+                      .product__report-stars
+                        +stars-static('active','active','active','active','active')
+                      .product__report-date 23.06.2019
+  section.offers-section 
+    .container
+      h2 Хорошее дополнение к цветам
+      .carts__wrap.carts-list.carts-list-4
+        +cart('2 358 руб.', 'Букет из 7 нежно розовых пионов', 'новинка', 'супер цена', './assets/img/carts/1.png')
+        +cart('3 400 руб.', 'Букет «Мечта»', 'новинка', 'супер цена', './assets/img/carts/2.png')
+        +cart('3 450 руб.', 'Букет с цветами «Желание»', 'новинка', 'супер цена', './assets/img/carts/3.png')
+        +cart('3 750 руб.', 'Корзина с сезонными цветами', 'новинка', 'супер цена', './assets/img/carts/4.png')

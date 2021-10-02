@@ -1,0 +1,14 @@
+mixin basket-cart(src, title)
+  .basket-cart
+    .basket__left
+      .basket-cart__pic 
+        img(src=src)
+      .basket-cart__info
+        h5.basket-cart__title=title
+        p.text-grey.basket-cart__text 51 штука
+        .basket-cart__amount
+          +counter
+          .basket-cart__summ.summ 2 358 руб.
+    .basket__right
+      .basket-cart__close
+        +svgsprite('close-small')

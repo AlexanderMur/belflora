@@ -1,0 +1,76 @@
+extends _includes/layout
+
+block config
+  - var pagetitle = 'Главная'
+  - var bodyClass = ''
+block content
+  +main-banner('Каталог коллекций')
+  section.section-carts 
+    .container
+      h2.carts__title Online витрина
+      .carts__wrap.carts-list.carts-list-4
+        +cart('2 358 руб.', 'Букет из 7 нежно розовых пионов', 'новинка', 'супер цена', './assets/img/carts/1.png')
+        +cart('3 400 руб.', 'Букет «Мечта»', 'новинка', 'супер цена', './assets/img/carts/2.png')
+        +cart('3 450 руб.', 'Букет с цветами «Желание»', 'новинка', 'супер цена', './assets/img/carts/3.png')
+        +cart('3 750 руб.', 'Корзина с сезонными цветами', 'новинка', 'супер цена', './assets/img/carts/4.png')
+        +cart('6 870 руб.', 'Букет «Признание»', 'новинка', 'супер цена', './assets/img/carts/5.png')
+        +cart('3 200 руб.', 'Корзина с сезонными цветами', 'новинка', 'супер цена', './assets/img/carts/6.png')
+        +cart('1 950 руб.', 'Букет «Вдохновение»', 'новинка', 'супер цена', './assets/img/carts/7.png')
+        +cart('3 200 руб.', 'Букет «Радуга»', 'новинка', 'супер цена', './assets/img/carts/8.png')
+        +cart('3 750 руб.', 'Букет «Грация»', 'новинка', 'супер цена', './assets/img/carts/9.png')
+        +cart('2 450 руб.', 'Букет «Оттенки нежности»', 'новинка', 'супер цена', './assets/img/carts/10.png')
+        +cart('4 200 руб.', 'Коробка с цветами «Танго»', 'новинка', 'супер цена', './assets/img/carts/11.png')
+        +cart('2 450 руб.', 'Коробки с цветами «Восторг»', 'новинка', 'супер цена', './assets/img/carts/12.png')
+  section.section-catalogs
+    .container
+      .title-text 
+        h2.--text Коллекции букетов
+        p.text В нашем магазине вы можете заказать букеты для самых разных праздников, ознакомьтесь с коллекциями
+      .catalog
+        .catalogs__list
+          +catalog('Все букеты', './assets/img/catalog/1.png')
+          +catalog('Пионы', './assets/img/catalog/2.png')
+          +catalog('Авторские букеты', './assets/img/catalog/3.png')
+          +catalog('Монобукеты', './assets/img/catalog/4.png')
+          +catalog('Коробки с цветами', './assets/img/catalog/5.png')
+          +catalog('Огромные букеты', './assets/img/catalog/6.png')
+          +catalog('Ящики с цветами', './assets/img/catalog/7.png')
+          +catalog('Корзины с цветами', './assets/img/catalog/8.png')
+      a.catalog__btn.button.--white(href="catalog.html") Еще коллекции
+  section.page-banner-section
+    .container 
+      +page-banner('Не нашел, что искал? Собери на свой вкус')
+  section.section-slider 
+    .container 
+      h2.section-slider__title  Актуальное
+      .main-slider.swiper-container
+        .swiper-wrapper
+          .swiper-slide.main-slide(style="background-image: url('./assets/img/slider/1.png')")
+            h3.main-slider__title
+              span 30% 
+              | на пионы
+            p.text.main-slider__text Лучшая коллекция букетов с пионами на Belflora
+            a.main-slider__link(href="#") Смотреть коллекцию 
+          .swiper-slide.main-slide(style="background-image: url('./assets/img/slider/2.png')")
+            h3.main-slider__title
+              span Игрушка  
+              | в подарок к букету
+            p.text.main-slider__text Лучшая коллекция букетов с пионами на Belflora
+            a.main-slider__link(href="#") Смотреть коллекцию
+          .swiper-slide.main-slide(style="background-image: url('./assets/img/slider/1.png')")
+            h3.main-slider__title
+              span Игрушка  
+              | в подарок к букету
+            p.text.main-slider__text Лучшая коллекция букетов с пионами на Belflora
+            a.main-slider__link(href="#") Смотреть коллекцию
+          .swiper-slide.main-slide(style="background-image: url('./assets/img/slider/2.png')")
+            h3.main-slider__title
+              span Игрушка  
+              | в подарок к букету
+            p.text.main-slider__text Лучшая коллекция букетов с пионами на Belflora
+            a.main-slider__link(href="#") Смотреть коллекцию
+        .slider-prev.slider-button
+          +svgsprite('arrow-left')
+        .slider-next.slider-button
+          +svgsprite('arrow-right')
+  +text-section
